@@ -1,0 +1,798 @@
+/* Setting font family and background for the entire body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/Background.png);
+    background-color: white;
+    background-size: cover;
+    /* Ensures the background image covers the entire page */
+    background-repeat: no-repeat;
+    /* Prevents the background image from repeating */
+    background-position: center center;
+    /* Centers the background image */
+
+}
+
+#container {
+    width: 100%;
+    max-width: 1550px;
+}
+
+/* Styling for the header */
+header {
+    background-color: rgba(255, 255, 255, 0.725);
+    text-align: center;
+}
+
+#masthead {
+    padding: 1.5rem;
+
+}
+
+
+#logo img {
+    width: 38%;
+    /* Resize image to fit container width */
+    height: auto;
+    /* Maintain aspect ratio */
+    text-align: center;
+}
+
+/* Hover effect for navigation links */
+.menu li a:hover {
+    color: rgb(73, 207, 192);
+    transform: scale(1.1);
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* Style the bars */
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(101, 167, 107);
+    margin: 5px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(101, 167, 107);
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu li {
+    margin-right: 20px;
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+
+/* Media query to show/hide the hamburger menu */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
+
+
+
+/* Content area styles */
+.content {
+
+    align-items: flex-start;
+    /*deixa longo*/
+    margin: 0 auto;
+    max-width: 1100px;
+    display: flex;
+
+
+}
+
+/* Main section styles */
+main {
+
+    align-items: flex-start;
+    margin: 1rem;
+    width: 68%;
+    flex-grow: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.725);
+}
+
+article h1 {
+
+    font-size: 1.8rem;
+    margin: 0;
+    color: rgb(101, 167, 107);
+
+}
+
+/* Subsection title styles */
+article h2 {
+
+    font-size: 1.2rem;
+    margin: 0;
+    color: rgb(101, 167, 107);
+
+}
+
+article h3 {
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0;
+    color: rgb(101, 167, 107);
+
+}
+
+/* Article body styles */
+.article-body {
+
+    margin-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+    text-align: justify;
+
+}
+
+#SherylIntroduction img {
+
+    width: 100%;
+    /* Resize image to fit container width */
+    height: auto;
+    /* Maintain aspect ratio */
+    overflow: hidden;
+    /* Ensures the image stays within the circular frame */
+    border: 10px display flex;
+
+}
+
+#SherylIntroduction p {
+    font-size: 0.8rem;
+    float: right;
+
+
+}
+
+#SherylLife img {
+
+    width: 100%;
+    /* Resize image to fit container width */
+    height: auto;
+    /* Maintain aspect ratio */
+    overflow: hidden;
+    /* Ensures the image stays within the circular frame */
+    border: 10px display flex;
+}
+
+#SherylLife p {
+    font-size: 0.8rem;
+    float: right;
+
+}
+
+#pages {
+    max-width: 1500px;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.725);
+    justify-content: center;
+
+}
+
+#pages h1 {
+
+    font-size: 1.8rem;
+    margin: 0;
+    color: rgb(101, 167, 107);
+    text-align: center;
+
+
+}
+
+#pages p {
+    color: rgb(101, 167, 107);
+    padding: 1rem;
+    border-radius: 2rem;
+    flex-grow: 1;
+    display: flex;
+    text-align: justify;
+
+}
+
+.GridContainer {
+
+    max-width: 1500px;
+    margin: 1rem auto;
+    border: 1px solid rgb(101, 167, 107);
+    padding: 1.5rem;
+    display: flex;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    background-color: rgba(255, 255, 255, 0.725);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.GridContainer div:hover {
+
+    transform: scale(1.1);
+}
+
+
+.GridContainer div {
+    padding: 1rem;
+    border-radius: 2rem;
+    flex-grow: 1;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    /* Center items vertically */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+
+
+}
+
+
+
+.GridContainer div a {
+    text-decoration: none;
+    display: flex;
+    width: 45%;
+    transition: transform 0.5s ease;
+
+
+}
+
+
+.GridContainer img {
+    width: 85%;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .GridContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+.Fun-fact-one {
+    background-color: rgb(226, 230, 216);
+
+}
+
+.Fun-fact-two {
+    background-color: rgb(226, 230, 216);
+
+}
+
+.Fun-fact-three {
+    background-color: rgb(226, 230, 216);
+
+}
+
+.Sheryl-footer {
+    background-color: rgb(226, 230, 216);
+
+}
+
+.index-footer {
+    background-color: rgb(226, 230, 216);
+}
+
+
+.Tech-footer {
+    background-color: rgb(226, 230, 216);
+
+}
+
+.Multimedia-footer {
+    background-color: rgb(226, 230, 216);
+
+}
+
+.Impact-footer {
+    background-color: rgb(226, 230, 216);
+
+}
+
+.Projects-footer {
+    background-color: rgb(226, 230, 216);
+}
+
+.AboutMe-footer {
+    background-color: rgb(226, 230, 216);
+}
+
+.Sources-footer {
+    background-color: rgb(226, 230, 216);
+}
+
+
+/* Article footer styles */
+.article-footer {
+
+    text-align: right;
+    margin-bottom: 2rem;
+
+
+}
+
+/* Styling for links in the article footer */
+.article-footer a {
+
+    color: white;
+    background-color: rgb(101, 167, 107);
+    padding: 1rem;
+    text-decoration: none;
+
+}
+
+#SheryMultimidia {
+    max-width: 1500px;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.725);
+    justify-content: center;
+
+}
+
+#SheryMultimidia h1 {
+
+    font-size: 1.8rem;
+    margin: 0;
+    color: rgb(101, 167, 107);
+    text-align: center;
+}
+
+.SheryMultimidia {
+
+    max-width: 1500px;
+    margin: 1rem auto;
+    border: 1px solid rgb(101, 167, 107);
+    padding: 1.5rem;
+    display: flex;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    background-color: rgba(255, 255, 255, 0.725);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.SheryMultimidia div:hover {
+
+    transform: scale(1.8);
+    
+
+}
+
+
+.GridContainer div {
+    padding: 1rem;
+    border-radius: 2rem;
+    flex-grow: 1;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    /* Center items vertically */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.SheryMultimidia div a {
+    text-decoration: none;
+    display: flex;
+    width: 45%;
+    transition: transform 0.5s ease;
+
+
+}
+
+
+.SheryMultimidia img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .SheryMultimidia {
+        grid-template-columns: 1fr;
+    }
+}
+
+.hiddenParagraph {
+    display: none;
+}
+
+.hoverImage:hover+.hiddenParagraph {
+    display: contents;
+    font-size: 0.8rem;
+    float: right;
+
+}
+
+/* Author paragraph styles */
+.author {
+    margin-top: 0;
+    text-decoration: double;
+    font-size: 1rem;
+    color: rgb(101, 167, 107);
+
+}
+
+/* Sidebar styles */
+aside {
+    width: 32%;
+    padding: 1.5rem;
+    display: flex;
+    list-style: none;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    background-color: rgba(255, 255, 255, 0.725);
+    line-height: 1.6;
+    margin: 1rem;
+
+
+
+}
+
+.Home-Footer {
+    width: 65%;
+    align-content: center;
+    border: 1px solid rgb(101, 167, 107);
+    background-color: rgba(255, 255, 255, 0.725);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+
+}
+
+.Home-Footer p {
+    line-height: 1.6;
+    margin: 1rem;
+    padding: 1rem;
+    color: rgb(101, 167, 107);
+    justify-content: center;
+
+}
+
+.Contents {
+
+    align-content: center;
+    border: 1px solid rgb(101, 167, 107);
+    background-color: rgba(255, 255, 255, 0.725);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    display: grid;
+    width: 90%;
+
+
+
+}
+
+.Contents p {
+    line-height: 1.6;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    color: rgb(101, 167, 107);
+    text-align: center;
+
+
+
+}
+
+
+aside h2 {
+    color: rgb(101, 167, 107);
+    text-align: center;
+
+}
+
+
+/* Styling for content in the sidebar */
+aside div {
+
+    padding: 1rem;
+    border: 1px solid rgb(101, 167, 107);
+    text-decoration: none;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+
+
+
+}
+
+/* Styling for content in the sidebar */
+aside div a {
+
+    text-decoration: none;
+    color: rgb(101, 167, 107);
+    width: auto;
+
+
+}
+
+/* List item styles in the sidebar */
+aside li {
+
+    margin: 1.2rem;
+    text-decoration: none;
+    color: rgb(101, 167, 107);
+    display: flex;
+    padding: 1rem;
+}
+
+aside li a:hover {
+    color: rgb(73, 207, 192);
+    transform: scale(1.1);
+}
+
+aside img {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    aside, .Home-Footer, .Contents {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .Contents {
+        width: 95%;
+    }
+
+    aside li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Footer styles */
+footer {
+
+    color: rgb(101, 167, 107);
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+/* Link styles in the footer */
+footer a {
+
+    color: rgb(101, 167, 107);
+    text-decoration: none
+}
+
+#Aline img {
+    width: 40%;
+    /* Resize image to fit container width */
+    height: auto;
+    /* Maintain aspect ratio */
+    border: 10px display flex;
+    float: left;
+    margin: 10px;
+}
+
+#SherylTech img {
+
+    width: 40%;
+    /* Resize image to fit container width */
+    height: auto;
+    /* Maintain aspect ratio */
+    border: 10px display flex;
+    float: right;
+    margin: 10px;
+
+}
+
+#SherylTech p {
+    font-size: 0.8rem;
+    float: right;
+    clear: right;
+    
+
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 54.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#Why-admiration img {
+
+    width: 100%;
+    /* Resize image to fit container width */
+    height: auto;
+    /* Maintain aspect ratio */
+    overflow: hidden;
+    /* Ensures the image stays within the circular frame */
+    border: 10px display flex;
+
+}
+
+#Why-admiration p {
+    font-size: 0.8rem;
+    float: right;
+
+
+}
+
+.about-me {
+    max-width: 100%;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.things-about-me {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-me h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+@media (max-width: 768px) {
+    .things-about-me {
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+.Sheryl-books {
+    max-width: 100%;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.books {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.book-item {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-item img {
+    width: 100%;
+}
+
+.book-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.Sheryl-books {
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+@media (max-width: 768px) {
+    .books {
+        grid-template-columns: 1fr;
+    }
+}
+
+#SherylProjects img {
+
+    width: 100%;
+    /* Resize image to fit container width */
+    height: auto;
+    /* Maintain aspect ratio */
+    overflow: hidden;
+    /* Ensures the image stays within the circular frame */
+    border: 10px display flex;
+
+}
+
+#SherylProjects p {
+    font-size: 0.8rem;
+    float: right;
+}
+
+.citation {
+    margin-bottom: 10px;
+
+}
+
+.citation li {
+    padding-bottom: 15px
+}
+
+#photo-citation img {
+
+    width: 100%;
+    /* Resize image to fit container width */
+    height: auto;
+    /* Maintain aspect ratio */
+    overflow: hidden;
+    /* Ensures the image stays within the circular frame */
+    border: 10px display flex;
+
+}
+
+#photo-citation p {
+    font-size: 0.8rem;
+    float: right;
+
+}
